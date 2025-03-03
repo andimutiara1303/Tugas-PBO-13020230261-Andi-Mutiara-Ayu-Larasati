@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pengajuan KTP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 400px;
+            margin: auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            background: #fff;
+        }
+        .header {
+            background: red;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        .radio-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 5px;
+        }
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 5px;
+        }
+        .buttons {
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Form Pengajuan KTP</div>
+        <form>
+            <label>Nomor Pendaftaran</label>
+            <input type="text" maxlength="4"> <input type="text" maxlength="4"> <input type="text" maxlength="4"> <input type="text" maxlength="4">
+            
+            <label>Nama</label>
+            <input type="text" placeholder="Nama Lengkap">
+            
+            <label>Alamat</label>
+            <textarea placeholder="Alamat Lengkap"></textarea>
+            
+            <label>Provinsi</label>
+            <select>
+                <option>Sulawesi Selatan</option>
+            </select>
+            
+            <label>Kota</label>
+            <input type="text" placeholder="Kota">
+            
+            <label>Kec.</label>
+            <input type="text" placeholder="Kecamatan">
+            
+            <label>Pekerjaan</label>
+            <input type="text" placeholder="Pekerjaan">
+            
+            <label>Jenis Kelamin</label>
+            <div class="radio-group">
+                <input type="radio" name="gender"> Pria
+                <input type="radio" name="gender"> Wanita
+            </div>
+            
+            <label>Tempat/ Tanggal Lahir</label>
+            <input type="text" placeholder="Tempat Lahir">
+            <input type="date">
+            
+            <label>Kelengkapan Berkas</label>
+            <div class="checkbox-group">
+                <input type="checkbox"> FC. KK
+                <input type="checkbox"> Surat Pengatar
+                <input type="checkbox"> Pas Foto
+                <input type="checkbox"> Surat Domisili
+            </div>
+            
+            <label>File Scan</label>
+            <input type="file">
+            
+            <div class="buttons">
+                <button type="submit">Pengajuan</button>
+                <button type="reset">Batal</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
